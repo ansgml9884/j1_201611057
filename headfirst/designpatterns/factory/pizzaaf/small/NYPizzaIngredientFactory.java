@@ -13,6 +13,10 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
  public Cheese createCheese() {
   return new ReggianoCheese();
  }
+  
+ public Potato createPotato() {
+  return new SlicedPotato();
+ }
  
  public Veggies[] createVeggies() {
   Veggies veggies[] = { new Garlic(), new Onion(), new Mushroom(), new RedPepper() };

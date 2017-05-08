@@ -7,6 +7,7 @@ public abstract class Pizza {
  Sauce sauce;
  Veggies veggies[];
  Cheese cheese;
+ Potato potato;
  Pepperoni pepperoni;
 
  abstract void prepare();
@@ -44,6 +45,10 @@ public abstract class Pizza {
   }
   if (cheese != null) {
    result.append(cheese);
+   result.append("\n");
+  }
+  if (potato != null) {
+   result.append(potato);
    result.append("\n");
   }
   if (veggies != null) {

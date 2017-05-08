@@ -14,7 +14,11 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory
  public Cheese createCheese() {
   return new MozzarellaCheese();
  }
-
+ 
+ public Potato createPotato() {
+  return new MashedPotato();
+ }
+ 
  public Veggies[] createVeggies() {
   Veggies veggies[] = { new BlackOlives(), 
                         new Spinach(),};
